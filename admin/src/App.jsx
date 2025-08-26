@@ -11,7 +11,7 @@ import Complaints from './pages/complaint/Complaints'
 
 const App = () => {
 
-  const url = "http://localhost:3000"
+  const url = "https://petpujo.onrender.com/"
 
   return (
     <div>
