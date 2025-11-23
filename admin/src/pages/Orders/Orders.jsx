@@ -80,7 +80,7 @@ const Orders = ({ url }) => {
             <p>Items : {order.items.length}</p>
 
             {/* Amount */}
-            <p>${order.amount}</p>
+            <p>₹{order.amount}</p>
 
             {/* Status Dropdown */}
             <select

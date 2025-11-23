@@ -35,9 +35,9 @@ const Cart = () => {
                     className="w-[50px]"
                   />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>₹{item.price}</p>
                   <p>{cartItems[item._id]}</p>
-                  <p>${item.price * cartItems[item._id]}</p>
+                  <p>₹{item.price * cartItems[item._id]}</p>
                   <p
                     onClick={() => removeFromCart(item._id)}
                     className="cursor-pointer"
@@ -61,18 +61,18 @@ const Cart = () => {
           <div>
             <div className="flex justify-between text-[#555]">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>₹{getTotalCartAmount()}</p>
             </div>
             <hr className="my-[10px]" />
             <div className="flex justify-between text-[#555]">
               <p>Delivery Fee</p>
-              <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
+              <p>₹{getTotalCartAmount() === 0 ? 0 : 2}</p>
             </div>
             <hr className="my-[10px]" />
             <div className="flex justify-between text-[#555] font-bold">
               <b>Total</b>
               <b>
-                $
+                ₹
                 {getTotalCartAmount() === 0
                   ? 0
                   : getTotalCartAmount() + 2}
